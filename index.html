@@ -6,6 +6,8 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="p1"></p>
+    <p id="p2"></p>
     <script>
         function b1(){
             return "Hello JavaScript"
@@ -25,6 +27,14 @@
             return x+y
         }
         document.write(add(10,4))
+
+        var x=3
+        function f9(){
+            let y=5
+            document.getElementById("p2").innerHTML=x+y;
+        }
+        f9();
+        document.getElementById("p1").innerHTML=x+10;
     </script>
 </body>
 </html>
